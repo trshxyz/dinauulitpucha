@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis,com/css?family=Baloo+Thambi');
+body {
+    color: #111;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Baloo Thambi';
+    font-size: 5rem;
+}
+.container > span{
+    animation: glow 2s ease-in-out infinite;
+}
+@keyframes glow{
+    0%, 100%{
+        color: rgb(0, 0, 0);
+        text-shadow: 0 0 12px rgb(248, 73, 126), 0 0 50px rgb(248, 73, 126), 0 0 100px rgb(206, 2, 63)
+    }
+    10%,90% {
+        color: #222222;
+        text-shadow: none;
+    }
+}
+.container > span:nth-child(2){
+    animation-delay: 0.25s;
+}
+.container > span:nth-child(3){
+    animation-delay: 0.5s;
+}
+.container > span:nth-child(4){
+    animation-delay: 0.75s;
+}
+.container > span:nth-child(5){
+    animation-delay: 1.10s;
+}
+.container > span:nth-child(7){
+    animation-delay: 1.35s;
+}
+.container > span:nth-child(8){
+    animation-delay: 1.55s;
+}
+.container > span:nth-child(9){
+    animation-delay: 2.00s;
+}
